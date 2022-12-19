@@ -1,0 +1,247 @@
+library IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL; 
+entity AD9845 is
+	generic	
+		(
+		VD_EDGE				: NATURAL;
+		HD_EDGE				: NATURAL;
+		PBLK_RISING_EDGE_Y 	: NATURAL;
+		PBLK_FALLING_EDGE_Y	: NATURAL;
+		PBLK_RISING_EDGE_X 	: NATURAL;
+		PBLK_FALLING_EDGE_X	: NATURAL;
+		CLP_RISING_EDGE_X	: NATURAL;
+		CLP_FALLING_EDGE_X	: NATURAL
+		
+		);
+
+	 port(
+		CLK			: in STD_LOGIC;
+		
+		CNT_EN		: in STD_LOGIC;
+		RESET 		: in STD_LOGIC;
+		ADC_GAIN 	: in STD_LOGIC_VECTOR(9 downto 0);
+		ADC_CLAMP	: in STD_LOGIC_VECTOR(7 downto 0); 
+		GAIN_STROBE	: in STD_LOGIC;
+		CLAMP_STROBE: in STD_LOGIC;
+		X			: in STD_LOGIC_VECTOR(11 downto 0);
+		Y			: in STD_LOGIC_VECTOR(11 downto 0);
+		MODE_CCD	: in std_logic;
+		VD			: out STD_LOGIC;
+		HD			: out STD_LOGIC;
+        DATACLK 	: OUT STD_LOGIC;	
+		SHD 		: OUT STD_LOGIC;
+		SHP 		: OUT STD_LOGIC;
+		PBLK 		: OUT STD_LOGIC;	
+		CLPDM 		: OUT STD_LOGIC;
+		CLPOB 		: OUT STD_LOGIC;
+		AD_SDATA	: out STD_LOGIC:='0';
+		AD_SL		: out STD_LOGIC:='0';
+		AD_SCK		: out STD_LOGIC:='0'
+		);			  
+		
+
+end AD9845;
+architecture syn of AD9845 is	
+signal cnt 		: std_logic_vector(1 downto 0);
+signal ad_cnt	: std_logic_vector(8 downto 0);--6
+signal clpob_w	: std_logic;
+signal GAIN		: std_logic_vector(9 downto 0);
+signal int_gain_strobe : std_logic;
+signal int_clamp_strobe: std_logic;
+signal CLAMP	: std_logic_vector(7 downto 0);
+signal sck_en	: std_logic;
+signal AD	: std_logic_vector (9 downto 0);  
+signal ADC_int : std_logic_vector(2 downto 0);
+signal en	: std_logic_vector(2 downto 0):="000";
+signal ena	: std_logic;
+begin
+	--INT_CLK	<= X(0);
+	ADC_VD: process(CLK)
+	begin
+		if rising_edge(CLK) then 
+			if RESET = '1' then VD <= '0';
+			elsif CNT_EN  = '1' then 
+				if Y > VD_EDGE then VD <= '1'; --285 /4  --415 / 7 
+				else VD <= '0';
+				end if;
+			end if;
+		end if;
+	end process;
+	ADC_HD: process(CLK)
+	begin
+		if rising_edge(CLK) then 
+			if RESET = '1' then HD <= '0';
+			elsif CNT_EN  = '1' then 
+				if X > HD_EDGE then HD <= '1';	--285 / 180 -- 415 / 102 см Барк.
+				else HD <= '0';
+				end if;
+			end if;
+		end if;
+	end process;  
+		--PBLK_RISING_EDGE_Y 	=> 26, PBLK_FALLING_EDGE_Y	=> 57,
+		--PBLK_RISING_EDGE_X 	=> 56, PBLK_FALLING_EDGE_X	=> 412
+
+	ADC_PBLK:process(CLK)
+	begin
+	if rising_edge(CLK) then
+		if RESET = '1' then PBLK <= '0';
+		else
+			if MODE_CCD = '0' then
+				if 	(Y < PBLK_RISING_EDGE_Y )or (Y = PBLK_RISING_EDGE_Y and X < PBLK_RISING_EDGE_X) or 
+					(Y > PBLK_FALLING_EDGE_Y)or (Y = PBLK_FALLING_EDGE_Y and X >PBLK_FALLING_EDGE_X) or 
+					(X >= PBLK_FALLING_EDGE_X and X < PBLK_RISING_EDGE_X) then PBLK <= '0';
+					else PBLK <= '1';
+				end if;	  
+			elsif MODE_CCD = '1' then
+				if 	(Y < 5 )or (Y = 5 and X < PBLK_RISING_EDGE_X) or 
+					(Y > 1055)or (Y = 1055 and X >PBLK_FALLING_EDGE_X) or 
+					(X >= PBLK_FALLING_EDGE_X and X < PBLK_RISING_EDGE_X) then PBLK <= '0';
+					else PBLK <= '1';
+				end if;	  
+			end if;	
+		end if;
+	end if;	  
+	end process;
+	ADC_CLPOB:process(CLK)
+	begin
+		if rising_edge(CLK) then
+			if RESET = '1' then CLPOB_w <= '1';
+			else 
+				if MODE_CCD = '0'then
+				
+					--if (Y >= PBLK_RISING_EDGE_Y and Y <= PBLK_FALLING_EDGE_Y - 1)and (X >=CLP_FALLING_EDGE_X and X < CLP_RISING_EDGE_X)then CLPOB_w <= '0';
+					if (X >=CLP_FALLING_EDGE_X and X < CLP_RISING_EDGE_X)then CLPOB_w <= '0';					
+					else CLPOB_w <='1';
+					end if;
+				elsif MODE_CCD = '1' then
+					
+					if (X >=CLP_FALLING_EDGE_X and X < CLP_RISING_EDGE_X)then CLPOB_w <= '0';
+						else CLPOB_w <='1';
+					end if;
+				end if;		
+								
+			CLPOB <= CLPOB_w;
+			CLPDM <= CLPOB_w;
+			end if;
+		end if;
+	end process;
+
+
+	process(CLK)
+	begin
+		if rising_edge(CLK) then 
+			if RESET = '1' then cnt <= (others => '0');			
+			else cnt <= cnt + 1;
+			end if;
+		end if;
+	end process;
+	DATACLK <= not cnt(1);
+	
+	ADC_SHP:process(CLK)
+	begin		
+		if rising_edge(CLK) then
+			if RESET = '1' then SHP <= '0'; 
+			elsif (cnt = 3) then SHP <= '0';
+				else SHP<='1';
+			end if;
+		end if;
+	end process;
+
+	ADC_SHD:process(CLK)
+	begin		
+		if rising_edge(CLK) then
+			if RESET = '1' then SHD <= '0'; 
+			elsif (cnt = 1) then SHD <= '0';
+				else SHD<='1';
+			end if;
+		end if;
+	end process;
+
+	-- защелкивание команды один раз в кадр в гасящем интервале
+	REG_ORDER:process(CLK)
+	begin
+		if rising_edge(CLK) then
+			if RESET = '1' then GAIN <= (others=> '0');CLAMP <= (others =>'0');
+				elsif CNT_EN  = '1' then 
+					if (Y = 1 and X = 1) then GAIN<= ADC_GAIN; CLAMP <= ADC_CLAMP; 
+					end if;
+			end if;
+		end if;
+	end process;
+	-- задание начала передачи комманд
+  	process(CLK)
+	begin
+		if rising_edge(CLK) then 
+		
+			en <= en + 1;
+			if en = 7 then ena <= '1';
+				else ena <= '0';
+			end if;
+		end if;
+	end process;
+
+	process(CLK)
+	begin
+		if rising_edge(CLK) then
+			if RESET = '1' then int_gain_strobe <= '0'; int_clamp_strobe <= '0';
+			elsif CNT_EN  = '1' then 
+				if (Y = 1 and X = 4) then int_clamp_strobe <= '1'; 
+				elsif (Y = 1 and X = 200) then int_gain_strobe <= '1'; 
+				else int_gain_strobe <= '0'; int_clamp_strobe <= '0';
+				end if;
+			end if;	 
+		end if;
+	end process;
+	-- задание счетчика бит
+	process(CLK)
+	begin
+		if rising_edge(CLK) then
+			if RESET = '1' then 
+
+				AD_SL <='0';
+				AD_SCK <= '0';
+				ad_cnt <= (others => '0');
+				AD_SDATA <= '0';AD <= (others => '0'); ADC_int <= (others =>'0');
+				elsif CNT_EN  = '1' then 
+					if (int_gain_strobe = '1' or int_clamp_strobe = '1') then  ad_cnt <= "100000000";
+						elsif ad_cnt(8) = '1' then ad_cnt <= ad_cnt + 1;
+					end if; 
+					if ad_cnt(7 downto 3 ) > 0 and ad_cnt(7 downto 3) <= 16 then AD_SL <= '0';
+						else AD_SL <= '1';
+					end if;	  
+					if ad_cnt(7 downto 3 ) > 0 and ad_cnt(7 downto 3) <= 16 then AD_SCK <= ad_cnt(2);
+						else AD_SCK <= '1';
+					end if;	  
+					if int_gain_strobe = '1' then ADC_int <= "001"; AD <= GAIN(9 downto 0);
+						elsif int_clamp_strobe ='1' then ADC_int <= "010";AD <= "00"&CLAMP(7 downto 0);
+					end if;				
+					--if (int_gain_strobe = '1' or int_clamp_strobe = '1') then
+						case ad_cnt(7 downto 3) is
+							when "00001" => AD_SDATA <= '0';		 --1
+							when "00010" => AD_SDATA <= ADC_int(0);	 --2
+							when "00011" => AD_SDATA <= ADC_int(1); --3
+							when "00100" => AD_SDATA <= ADC_int(2);		 --4
+							when "00101" => AD_SDATA <= '0';		 --5
+							when "00110" => AD_SDATA <= AD(0);	 --6
+							when "00111" => AD_SDATA <= AD(1);	 --7
+							when "01000" => AD_SDATA <= AD(2);	 --8
+							when "01001" => AD_SDATA <= AD(3);	 --9
+							when "01010" => AD_SDATA <= AD(4);	 --10
+							when "01011" => AD_SDATA <= AD(5);	 --11
+							when "01100" => AD_SDATA <= AD(6);	 --12
+							when "01101" => AD_SDATA <= AD(7);  --13
+							when "01110" => AD_SDATA <= AD(8);  --14
+							when "01111" => AD_SDATA <= AD(9);  --15
+							when "10000" => AD_SDATA <= '0'; 		 --16
+							when others => AD_SDATA <= '1';
+						end case;				
+					--end if;
+			 	end if;
+			end if;
+	end process;			
+
+
+	
+end ;

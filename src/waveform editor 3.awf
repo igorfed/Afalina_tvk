@@ -1,0 +1,37 @@
+$WAVE4
+$RESOLUTION 1000
+$ENDTIME 5000000000
+I 1 "e#9#std_logicc9 UX01ZWLH-"
+$S 1 1 REC_FT
+$S 2 1 RESET
+I 2 "a#28#std_logic_vector(7 downto 0)1 ricd7 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S 3 2 8 REC_DATE
+$SC 4-+7
+$S +1 1 REC_ADDR_EN
+$S +1 1 4 3 DATE
+$BUS S +1 2 8 RXDATA
+$SC +1-+7
+$BUS S +1 2 8 NBYTE
+$SC +1-+7
+$S +1 1 RXD_ERROR
+$S +1 1 RXD_OK
+$BUS S +1 2 8 SUMM_CTRL
+$SC +1-+7
+$BUS S +1 2 8 RD_ADDR
+$SC +1-+7
+$S +1 1 "UUT/wren"
+$S +1 1 "UUT/cvbeo1_byte1"
+$BUS S +1 2 8 "UUT/sum_ctrl"
+$SC +1-+7
+$S +1 1 "UUT/ena"
+$S +1 1 "UUT/wren"
+$S +1 1 "UUT/ctrl_summ_ok"
+$BUS IN +1 2 8 "UUT/LAST_BYTE"
+$SC +1-+7
+$S +1 1 "UUT/cvbeo1_byte_end"
+$BUS S +1 2 8 "UUT/num_byte"
+$SC +1-+7
+$OUT +1 1 "UUT/RXD_OK"
+P 0 1-85 CS "0"
+P 0 54 Radix "16"
+$ENDWAVE

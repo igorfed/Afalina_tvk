@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jan 30 14:31:35 2009
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : afalina_tvk
+Top-level Entity Name : afalina_tvk
+Family : Cyclone III
+Total logic elements : 2,114
+    Total combinational functions : 2,114
+    Dedicated logic registers : 1,485
+Total registers : 1485
+Total pins : 179
+Total virtual pins : 18
+Total memory bits : 86,016
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

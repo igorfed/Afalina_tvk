@@ -1,0 +1,47 @@
+library IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+use work.Afalina_tvk_pkg.all;
+entity ccd415_sync_generator is
+	port
+	(
+		CLK			: IN STD_LOGIC; -- CLK_PIX * 4 = 118 ћ√ц
+		CNT_EN		: IN STD_LOGIC; 
+		RESET 		: IN STD_LOGIC; 
+		SHUTTER		: IN STD_LOGIC_VECTOR(11 downto 0);--грубый затвор
+		GAIN		: IN STD_LOGIC_VECTOR(9 downto 0);--усиление
+		GAIN_STROBE	: IN STD_LOGIC;
+		CLAMP		: IN STD_LOGIC_VECTOR(7 downto 0);--прив€зка к уровню черного		
+		CLAMP_STROBE: IN STD_LOGIC;
+		-- ”правление регистрами CCD 415
+		XV1 		: OUT STD_LOGIC;
+		XV2 		: OUT STD_LOGIC;
+		XV3 		: OUT STD_LOGIC;
+		SG	 		: OUT STD_LOGIC;
+		XSUB 		: OUT STD_LOGIC;	
+		H1	 		: OUT STD_LOGIC;
+		H2 			: OUT STD_LOGIC;
+		RG	 		: OUT STD_LOGIC;	
+		--AD9845
+		DATACLK 	: OUT STD_LOGIC;	
+		SL 			: OUT STD_LOGIC;
+		SCK 		: OUT STD_LOGIC;
+		SDATA 		: OUT STD_LOGIC;
+		SHD 		: OUT STD_LOGIC;
+		SHP 		: OUT STD_LOGIC;
+		VD	 		: OUT STD_LOGIC;  
+		HD	 		: OUT STD_LOGIC;
+		PBLK 		: OUT STD_LOGIC;	
+		CLPDM 		: OUT STD_LOGIC;
+		CLPOB 		: OUT STD_LOGIC;
+		X			: OUT STD_LOGIC_VECTOR(11 downto 0);--горизонтальный счетчик
+		Y			: OUT STD_LOGIC_VECTOR(11 downto 0)--вертикальный счетчик
+		
+	);
+end ccd415_sync_generator;	 
+architecture syn of ccd285_sync_generator is 
+begin
+
+
+end;

@@ -1,0 +1,420 @@
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 11:44:01 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 11:46:26 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 11:48:57 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 11:59:06 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 12:05:17 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 12:27:33 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 12:28:33 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 13:34:38 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x064e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 13:36:58 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Wed Oct 08 13:37:45 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x06468a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 13:56:21 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x06468a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 13:57:11 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x06468a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Oct 08 14:07:10 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x06568a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Mon Oct 13 14:37:50 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Wed Oct 22 17:47:42 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Tue Oct 28 12:26:33 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x066e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Sat Nov 01 14:21:54 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Wed Nov 19 17:16:30 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x06768a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Dec 17 15:23:09 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x06768a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Dec 17 15:26:31 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Wed Dec 17 15:27:13 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x06768a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Wed Dec 17 15:29:47 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Thu Dec 18 17:09:16 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Mon Dec 22 11:09:35 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>GIO</sub_system>
+	<file>/quartus/edt/gio/gio_network_point.cpp</file>
+	<line>258</line>
+	<callstack>
+	0x045ef6bd: EDT_GIO + 0x1f6bd (?remove@GIO_NETWORK_POINT@@QAEXPAVGIO_CONNECTOR@@@Z + 0x5d)
+	</callstack>
+	<error>i != m_connectors.end()</error>
+	<date>Mon Dec 22 11:42:42 2008</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>i != m_connectors.end()
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x066e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Mon Jan 12 11:13:08 2009</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x066e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Mon Jan 12 11:15:04 2009</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>FCUDA</sub_system>
+	<file>/quartus/fitter/fcuda/fcuda_register_packer_op_interface.cpp</file>
+	<line>336</line>
+	<callstack>
+	0x066e8a16:
+	</callstack>
+	<error>Cuda IO pad should only drive ibufs</error>
+	<date>Mon Jan 12 11:16:49 2009</date>
+	<version>Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version</version>
+	<full_error>Cuda IO pad should only drive ibufs
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version </full_error>
+</internal_error>
+

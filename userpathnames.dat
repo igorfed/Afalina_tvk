@@ -1,0 +1,6 @@
+[ExLibList-used]
+MV_QUARTUS_SYNTHESIS60=1
+[VerilogDirs-used]
+tools=1
+[tools*VerilogDirs]
+src=user

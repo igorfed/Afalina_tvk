@@ -1,0 +1,16 @@
+[Version]
+Version=7.1
+[Designs]
+Afalina_tvk=Afalina_tvk.adf
+[Settings]
+Active=afalina_tvk
+[Expand]
+afalina_tvk=1
+ccd274_bm20=0
+timing_generator=0
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

@@ -1,0 +1,363 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C10/5 (0x020F10DD)" sof_file="afalina_tvk.sof" top_level_entity="afalina_tvk">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance compilation_mode="full" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="2"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="1"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="126976"/>
+      <multi attribute="timebars" size="2" value="19,453"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2008/10/29 16:51:52  #0">
+      <clock name="AduC842:AduC|me_108_rs485_top_all:inst4|me_108_rs_flags0:130|COM_CLK" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="4096" trigger_in_enable="yes" trigger_in_node="AduC842:AduC|me_108_rs485_top_all:inst4|RXD_OK" trigger_in_tap_mode="classic" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_ADR_EN" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA_EN" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_FT" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXD_OK" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ctrl_summ_ok" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte1" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte_end" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff1" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff2" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ena" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[0]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[1]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[2]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[3]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[4]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[5]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[6]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[7]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[0]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[1]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[2]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[3]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[4]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[5]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[6]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[7]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|wren" tap_mode="classic" type="register"/>
+          <wire name="RS485_MODE" tap_mode="classic" type="output pin"/>
+          <wire name="RS485_RXD" tap_mode="classic" type="input pin"/>
+          <wire name="RS485_TXD" tap_mode="classic" type="output pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_ADR_EN" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA_EN" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_FT" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXD_OK" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ctrl_summ_ok" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte1" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte_end" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff1" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff2" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ena" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[0]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[1]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[2]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[3]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[4]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[5]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[6]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[7]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[0]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[1]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[2]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[3]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[4]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[5]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[6]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[7]" tap_mode="classic" type="register"/>
+          <wire name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|wren" tap_mode="classic" type="register"/>
+          <wire name="RS485_MODE" tap_mode="classic" type="output pin"/>
+          <wire name="RS485_RXD" tap_mode="classic" type="input pin"/>
+          <wire name="RS485_TXD" tap_mode="classic" type="output pin"/>
+        </data_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="RS485_MODE"/>
+          <net is_signal_inverted="no" name="RS485_RXD"/>
+          <net is_signal_inverted="no" name="RS485_TXD"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_ADR_EN"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_FT"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA_EN"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte1"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|wren"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ena"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ctrl_summ_ok"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte_end"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff1"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff2"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXD_OK"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[7]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="RS485_MODE"/>
+          <net is_signal_inverted="no" name="RS485_RXD"/>
+          <net is_signal_inverted="no" name="RS485_TXD"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_ADR_EN"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_FT"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|REC_DATA_EN"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|MEM_A[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte1"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|wren"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ena"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|sum_ctrl[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|SUMM_CTRL[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|ctrl_summ_ok"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte" order="lsb_to_msb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|num_byte[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|cvbeo1_byte_end"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff1"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|dff2"/>
+          <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXD_OK"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|RXDATA[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|me_108_rs485_top_all:inst4|rs485_rec_string:inst5|LAST_BYTE[7]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger global_temp="1" name="trigger: 2008/10/29 16:51:52  #1" position="pre" power_up_trigger_mode="false" segment_size="1" trigger_in="rising edge" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="column width" size="18" value="34,34,154,74,68,70,88,100,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="window position" size="9" value="1119,746,398,124,356,50,51,0,0"/>
+  </global_info>
+</session>

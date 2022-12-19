@@ -1,0 +1,331 @@
+ -- Copyright (C) 1991-2007 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the needs of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		3.3V
+ --					Bank 2:		3.0V
+ --					Bank 3:		3.0V
+ --					Bank 4:		3.0V
+ --					Bank 5:		3.0V
+ --					Bank 6:		3.0V
+ --					Bank 7:		3.0V
+ --					Bank 8:		3.0V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks (Bank 13, 14, 15, 16 and 17),
+ --           	    connect each pin marked GND* either individually through a 10 kohm resistor
+ --           	    to GND or tie all pins together and connect through a single 10 kohm resistor
+ --           	    to GND.
+ --           	    For non-transceiver I/O banks, connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+CHIP  "afalina_tvk"  ASSIGNED TO AN: EP3C10F256C7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 3.0V    : 8         :                
+ADUC_RXD                     : A2        : output : 3.0-V LVTTL       :         : 8         : Y              
+MPU_INT0                     : A3        : output : 3.0-V LVTTL       :         : 8         : Y              
+MPU_WR                       : A4        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_A[0]                     : A5        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_A[2]                     : A6        : input  : 3.0-V LVTTL       :         : 8         : Y              
+PSEN                         : A7        : output : 3.0-V LVTTL       :         : 8         : Y              
+MPU_D[3]                     : A8        : bidir  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_D[6]                     : A9        : bidir  : 3.0-V LVTTL       :         : 7         : Y              
+XV1B                         : A10       : output : 3.0-V LVTTL       :         : 7         : Y              
+H2B                          : A11       : output : 3.0-V LVTTL       :         : 7         : Y              
+CLPOBB                       : A12       : output : 3.0-V LVTTL       :         : 7         : Y              
+ADC_B[5]                     : A13       : input  : 3.0-V LVTTL       :         : 7         : Y              
+LVDS_CLK                     : A14       : output : 3.0-V LVTTL       :         : 7         : Y              
+ADC_B[7]                     : A15       : input  : 3.0-V LVTTL       :         : 7         : Y              
+VCCIO7                       : A16       : power  :                   : 3.0V    : 7         :                
+RESET_842                    : B1        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND                          : B2        : gnd    :                   :         :           :                
+ADUC_TXD                     : B3        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_INT1                     : B4        : output : 3.0-V LVTTL       :         : 8         : Y              
+MPU_RD                       : B5        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_A[1]                     : B6        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_A[3]                     : B7        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_D[2]                     : B8        : bidir  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_D[4]                     : B9        : bidir  : 3.0-V LVTTL       :         : 7         : Y              
+XV2B                         : B10       : output : 3.0-V LVTTL       :         : 7         : Y              
+RGB                          : B11       : output : 3.0-V LVTTL       :         : 7         : Y              
+H1B                          : B12       : output : 3.0-V LVTTL       :         : 7         : Y              
+ADC_B[4]                     : B13       : input  : 3.0-V LVTTL       :         : 7         : Y              
+ADC_B[6]                     : B14       : input  : 3.0-V LVTTL       :         : 7         : Y              
+GND                          : B15       : gnd    :                   :         :           :                
+ADC_B[10]                    : B16       : input  : 3.0-V LVTTL       :         : 6         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C1        :        :                   :         : 1         :                
+LVDS_D[15]                   : C2        : output : 3.3-V LVTTL       :         : 1         : Y              
+RS485_TXD                    : C3        : output : 3.0-V LVTTL       :         : 8         : Y              
+VCCIO8                       : C4        : power  :                   : 3.0V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+RS232_RXD                    : C6        : input  : 3.0-V LVTTL       :         : 8         : Y              
+VCCIO8                       : C7        : power  :                   : 3.0V    : 8         :                
+MPU_D[5]                     : C8        : bidir  : 3.0-V LVTTL       :         : 8         : Y              
+XV4B                         : C9        : output : 3.0-V LVTTL       :         : 7         : Y              
+VCCIO7                       : C10       : power  :                   : 3.0V    : 7         :                
+HDB                          : C11       : output : 3.0-V LVTTL       :         : 7         : Y              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 3.0V    : 7         :                
+ADC_B[8]                     : C14       : input  : 3.0-V LVTTL       :         : 7         : Y              
+ADC_B[11]                    : C15       : input  : 3.0-V LVTTL       :         : 6         : Y              
+ADC_B[0]                     : C16       : input  : 3.0-V LVTTL       :         : 6         : Y              
+LVDS_D[21]                   : D1        : output : 3.3-V LVTTL       :         : 1         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
+RS485_PV                     : D3        : output : 3.0-V LVTTL       :         : 8         : Y              
+RS485_MODE                   : D4        : output : 3.3-V LVTTL       :         : 1         : Y              
+LVDS_D[14]                   : D5        : output : 3.0-V LVTTL       :         : 8         : Y              
+ALE                          : D6        : input  : 3.0-V LVTTL       :         : 8         : Y              
+GND                          : D7        : gnd    :                   :         :           :                
+MPU_D[1]                     : D8        : bidir  : 3.0-V LVTTL       :         : 8         : Y              
+XV3B                         : D9        : output : 3.0-V LVTTL       :         : 7         : Y              
+GND                          : D10       : gnd    :                   :         :           :                
+VDB                          : D11       : output : 3.0-V LVTTL       :         : 7         : Y              
+CLPDMB                       : D12       : output : 3.0-V LVTTL       :         : 7         : Y              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+ADC_B[9]                     : D14       : input  : 3.0-V LVTTL       :         : 7         : Y              
+ADC_B[1]                     : D15       : input  : 3.0-V LVTTL       :         : 6         : Y              
+ADC_A[8]                     : D16       : input  : 3.0-V LVTTL       :         : 6         : Y              
+GND+                         : E1        :        :                   :         : 1         :                
+GND+                         : E2        :        :                   :         : 1         :                
+VCCIO1                       : E3        : power  :                   : 3.3V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+RS485_RXD                    : E5        : input  : 3.0-V LVTTL       :         : 1         : Y              
+MPU_A[4]                     : E6        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_A[5]                     : E7        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_D[0]                     : E8        : bidir  : 3.0-V LVTTL       :         : 8         : Y              
+XSUBB                        : E9        : output : 3.0-V LVTTL       :         : 7         : Y              
+MPU_D[7]                     : E10       : bidir  : 3.0-V LVTTL       :         : 7         : Y              
+SHPB                         : E11       : output : 3.0-V LVTTL       :         : 7         : Y              
+GNDA                         : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 3.0V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+GND+                         : E16       :        :                   :         : 6         :                
+LVDS_D[19]                   : F1        : output : 3.3-V LVTTL       :         : 1         : Y              
+LVDS_D[20]                   : F2        : output : 3.3-V LVTTL       :         : 1         : Y              
+LVDS_D[17]                   : F3        : output : 3.3-V LVTTL       :         : 1         : Y              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+KT_OUT                       : F5        : output : 3.3-V LVTTL       :         : 1         : Y              
+LVDS_D[16]                   : F6        : output : 3.0-V LVTTL       :         : 8         : Y              
+LVDS_D[22]                   : F7        : output : 3.0-V LVTTL       :         : 8         : Y              
+MPU_A[6]                     : F8        : input  : 3.0-V LVTTL       :         : 8         : Y              
+MPU_A[7]                     : F9        : input  : 3.0-V LVTTL       :         : 7         : Y              
+RS232_TXD                    : F10       : output : 3.0-V LVTTL       :         : 7         : Y              
+SHDB                         : F11       : output : 3.0-V LVTTL       :         : 7         : Y              
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+ADC_B[2]                     : F13       : input  : 3.0-V LVTTL       :         : 6         : Y              
+ADC_B[3]                     : F14       : input  : 3.0-V LVTTL       :         : 6         : Y              
+ADC_A[9]                     : F15       : input  : 3.0-V LVTTL       :         : 6         : Y              
+ADC_A[10]                    : F16       : input  : 3.0-V LVTTL       :         : 6         : Y              
+LVDS_D[18]                   : G1        : output : 3.3-V LVTTL       :         : 1         : Y              
+LVDS_D[7]                    : G2        : output : 3.3-V LVTTL       :         : 1         : Y              
+VCCIO1                       : G3        : power  :                   : 3.3V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+LVDS_D[23]                   : G5        : output : 3.3-V LVTTL       :         : 1         : Y              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+SG2AB                        : G11       : output : 3.0-V LVTTL       :         : 6         : Y              
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 3.0V    : 6         :                
+ADC_A[11]                    : G15       : input  : 3.0-V LVTTL       :         : 6         : Y              
+ADC_A[0]                     : G16       : input  : 3.0-V LVTTL       :         : 6         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H2        :        :                   :         : 1         :                
+altera_reserved_tck          : H3        : input  : 3.3-V LVTTL       :         : 1         : N              
+altera_reserved_tdi          : H4        : input  : 3.3-V LVTTL       :         : 1         : N              
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+ADC_A[1]                     : H15       : input  : 3.0-V LVTTL       :         : 6         : Y              
+ADC_A[4]                     : H16       : input  : 3.0-V LVTTL       :         : 6         : Y              
+LVDS_D[9]                    : J1        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[10]                   : J2        : output : 3.0-V LVTTL       :         : 2         : Y              
+nCE                          : J3        :        :                   :         : 1         :                
+altera_reserved_tdo          : J4        : output : 3.3-V LVTTL       :         : 1         : N              
+altera_reserved_tms          : J5        : input  : 3.3-V LVTTL       :         : 1         : N              
+LVDS_D[11]                   : J6        : output : 3.0-V LVTTL       :         : 2         : Y              
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+RES2                         : J11       : bidir  : 3.0-V LVTTL       :         : 5         : Y              
+SG2BB                        : J12       : output : 3.0-V LVTTL       :         : 5         : Y              
+ADC_A[2]                     : J13       : input  : 3.0-V LVTTL       :         : 5         : Y              
+ADC_A[3]                     : J14       : input  : 3.0-V LVTTL       :         : 5         : Y              
+ADC_A[5]                     : J15       : input  : 3.0-V LVTTL       :         : 5         : Y              
+ADC_A[6]                     : J16       : input  : 3.0-V LVTTL       :         : 5         : Y              
+LVDS_D[24]                   : K1        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[25]                   : K2        : output : 3.0-V LVTTL       :         : 2         : Y              
+VCCIO2                       : K3        : power  :                   : 3.0V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+LVDS_D[8]                    : K5        : output : 3.0-V LVTTL       :         : 2         : Y              
+RAS                          : K6        : output : 3.0-V LVTTL       :         : 2         : Y              
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+A[9]                         : K8        : output : 3.0-V LVTTL       :         : 3         : Y              
+A[7]                         : K9        : output : 3.0-V LVTTL       :         : 4         : Y              
+KT[2]                        : K10       : input  : 3.0-V LVTTL       :         : 4         : Y              
+KT[1]                        : K11       : input  : 3.0-V LVTTL       :         : 5         : Y              
+RES1                         : K12       : bidir  : 3.0-V LVTTL       :         : 5         : Y              
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 3.0V    : 5         :                
+ADC_A[7]                     : K15       : input  : 3.0-V LVTTL       :         : 5         : Y              
+DATACLKB                     : K16       : output : 3.0-V LVTTL       :         : 5         : Y              
+LVDS_D[13]                   : L1        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[12]                   : L2        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[0]                    : L3        : output : 3.0-V LVTTL       :         : 2         : Y              
+LDQM                         : L4        : output : 3.0-V LVTTL       :         : 2         : Y              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+BA[1]                        : L6        : output : 3.0-V LVTTL       :         : 2         : Y              
+A[0]                         : L7        : output : 3.0-V LVTTL       :         : 3         : Y              
+CKE                          : L8        : output : 3.0-V LVTTL       :         : 3         : Y              
+A[5]                         : L9        : output : 3.0-V LVTTL       :         : 4         : Y              
+PH                           : L10       : output : 3.0-V LVTTL       :         : 4         : Y              
+MPU_MODE                     : L11       : input  : 3.0-V LVTTL       :         : 4         : Y              
+CLPOBA                       : L12       : output : 3.0-V LVTTL       :         : 5         : Y              
+H1A                          : L13       : output : 3.0-V LVTTL       :         : 5         : Y              
+SL                           : L14       : output : 3.0-V LVTTL       :         : 5         : Y              
+PBLKB                        : L15       : output : 3.0-V LVTTL       :         : 5         : Y              
+SDATA                        : L16       : output : 3.0-V LVTTL       :         : 5         : Y              
+CLK_3                        : M1        : input  : 3.0-V LVTTL       :         : 2         : Y              
+CLK_2                        : M2        : input  : 3.0-V LVTTL       :         : 2         : Y              
+VCCIO2                       : M3        : power  :                   : 3.0V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA                         : M5        : gnd    :                   :         :           :                
+CS                           : M6        : output : 3.0-V LVTTL       :         : 3         : Y              
+A[2]                         : M7        : output : 3.0-V LVTTL       :         : 3         : Y              
+CAS                          : M8        : output : 3.0-V LVTTL       :         : 3         : Y              
+A[4]                         : M9        : output : 3.0-V LVTTL       :         : 4         : Y              
+RGA                          : M10       : output : 3.0-V LVTTL       :         : 4         : Y              
+MPU_RESET                    : M11       : input  : 3.0-V LVTTL       :         : 4         : Y              
+H2A                          : M12       : output : 3.0-V LVTTL       :         : 5         : Y              
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 3.0V    : 5         :                
+CLK_6                        : M15       : input  : 3.0-V LVTTL       :         : 5         : Y              
+CLK_7                        : M16       : input  : 3.0-V LVTTL       :         : 5         : Y              
+LVDS_D[26]                   : N1        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[2]                    : N2        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[1]                    : N3        : output : 3.0-V LVTTL       :         : 3         : Y              
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+WE                           : N5        : output : 3.0-V LVTTL       :         : 3         : Y              
+A[10]                        : N6        : output : 3.0-V LVTTL       :         : 3         : Y              
+GND                          : N7        : gnd    :                   :         :           :                
+A[3]                         : N8        : output : 3.0-V LVTTL       :         : 3         : Y              
+A[6]                         : N9        : output : 3.0-V LVTTL       :         : 4         : Y              
+GND                          : N10       : gnd    :                   :         :           :                
+XV4A                         : N11       : output : 3.0-V LVTTL       :         : 4         : Y              
+XV3A                         : N12       : output : 3.0-V LVTTL       :         : 4         : Y              
+XV1A                         : N13       : output : 3.0-V LVTTL       :         : 5         : Y              
+SHDA                         : N14       : output : 3.0-V LVTTL       :         : 5         : Y              
+SHPA                         : N15       : output : 3.0-V LVTTL       :         : 5         : Y              
+CLPDMA                       : N16       : output : 3.0-V LVTTL       :         : 5         : Y              
+LVDS_D[3]                    : P1        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[4]                    : P2        : output : 3.0-V LVTTL       :         : 2         : Y              
+LVDS_D[5]                    : P3        : output : 3.0-V LVTTL       :         : 3         : Y              
+VCCIO3                       : P4        : power  :                   : 3.0V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+A[1]                         : P6        : output : 3.0-V LVTTL       :         : 3         : Y              
+VCCIO3                       : P7        : power  :                   : 3.0V    : 3         :                
+BA[0]                        : P8        : output : 3.0-V LVTTL       :         : 3         : Y              
+BR                           : P9        : output : 3.0-V LVTTL       :         : 4         : Y              
+VCCIO4                       : P10       : power  :                   : 3.0V    : 4         :                
+XSUBA                        : P11       : output : 3.0-V LVTTL       :         : 4         : Y              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 3.0V    : 4         :                
+XV2A                         : P14       : output : 3.0-V LVTTL       :         : 4         : Y              
+SG2BA                        : P15       : output : 3.0-V LVTTL       :         : 5         : Y              
+SG2AA                        : P16       : output : 3.0-V LVTTL       :         : 5         : Y              
+LVDS_D[6]                    : R1        : output : 3.0-V LVTTL       :         : 2         : Y              
+GND                          : R2        : gnd    :                   :         :           :                
+DQ[1]                        : R3        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+DQ[2]                        : R4        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+DQ[4]                        : R5        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+DQ[6]                        : R6        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+A[8]                         : R7        : output : 3.0-V LVTTL       :         : 3         : Y              
+A[11]                        : R8        : output : 3.0-V LVTTL       :         : 3         : Y              
+DQ[8]                        : R9        : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+DQ[10]                       : R10       : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+DQ[12]                       : R11       : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+DQ[14]                       : R12       : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+SCK                          : R13       : output : 3.0-V LVTTL       :         : 4         : Y              
+HDA                          : R14       : output : 3.0-V LVTTL       :         : 4         : Y              
+GND                          : R15       : gnd    :                   :         :           :                
+DATACLKA                     : R16       : output : 3.0-V LVTTL       :         : 5         : Y              
+VCCIO3                       : T1        : power  :                   : 3.0V    : 3         :                
+LVDS_D[27]                   : T2        : output : 3.0-V LVTTL       :         : 3         : Y              
+DQ[0]                        : T3        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+CLK_SDRAM                    : T4        : output : 3.0-V LVTTL       :         : 3         : Y              
+DQ[3]                        : T5        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+DQ[5]                        : T6        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+DQ[7]                        : T7        : bidir  : 3.0-V LVTTL       :         : 3         : Y              
+A[12]                        : T8        : output : 3.0-V LVTTL       :         : 3         : Y              
+UDQM                         : T9        : output : 3.0-V LVTTL       :         : 4         : Y              
+DQ[9]                        : T10       : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+DQ[11]                       : T11       : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+DQ[13]                       : T12       : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+DQ[15]                       : T13       : bidir  : 3.0-V LVTTL       :         : 4         : Y              
+VDA                          : T14       : output : 3.0-V LVTTL       :         : 4         : Y              
+PBLKA                        : T15       : output : 3.0-V LVTTL       :         : 4         : Y              
+VCCIO4                       : T16       : power  :                   : 3.0V    : 4         :                

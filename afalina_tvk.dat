@@ -1,0 +1,117 @@
+set_global_assignment -name FAMILY "CycloneII"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY afalina_tvk
+set_global_assignment -name DO_MIN_ANALYSIS OFF
+set_global_assignment -name CUT_OFF_IO_PIN_FEEDBACK ON
+set_global_assignment -name CUT_OFF_READ_DURING_WRITE_PATHS ON
+set_global_assignment -name CUT_OFF_PATHS_BETWEEN_CLOCK_DOMAINS ON
+set_global_assignment -name REPORT_IO_PATHS_SEPARATELY OFF
+set_global_assignment -name NUMBER_OF_DESTINATION_TO_REPORT 10
+set_global_assignment -name NUMBER_OF_SOURCES_PER_DESTINATION_TO_REPORT 10
+set_global_assignment -name NUMBER_OF_PATHS_TO_REPORT 200
+set_global_assignment -name SPEED_DISK_USAGE_TRADEOFF NORMAL
+set_global_assignment -name SAVE_DISK_SPACE ON
+set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT OFF
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE BALANCED
+set_global_assignment -name MAX_AUTO_GLOBAL_REGISTER_CONTROLS ON
+set_global_assignment -name AUTO_GLOBAL_OE_MAX ON
+set_global_assignment -name AUTO_GLOBAL_CLOCK_MAX ON
+set_global_assignment -name ENABLE_IP_DEBUG OFF
+set_global_assignment -name AUTO_DSP_RECOGNITION ON
+set_global_assignment -name AUTO_ROM_RECOGNITION ON
+set_global_assignment -name AUTO_RAM_RECOGNITION ON
+set_global_assignment -name AUTO_RAM_BLOCK_BALANCING ON
+set_global_assignment -name AUTO_OPEN_DRAIN_PINS ON
+set_global_assignment -name AUTO_PARALLEL_EXPANDERS ON
+set_global_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF
+set_global_assignment -name ALLOW_POWER_UP_DONT_CARE ON
+set_global_assignment -name DSP_BLOCK_BALANCING "AUTO"
+set_global_assignment -name STATE_MACHINE_PROCESSING "AUTO"
+set_global_assignment -name OPTIMIZE_POWER_DURING_FITTING "NORMAL COMPILATION"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name FITTER_AUTO_EFFORT_DESIRED_SLACK_MARGIN 0NS
+set_global_assignment -name FIT_ONLY_ONE_ATTEMPT OFF
+set_global_assignment -name SEED 1
+set_global_assignment -name AUTO_RESTART_CONFIGURATION ON
+set_global_assignment -name RELEASE_CLEARS_BEFORE_TRI_STATES OFF
+set_global_assignment -name USER_START_UP_CLOCK OFF
+set_global_assignment -name ENABLE_DEVICE_WIDE_RESET OFF
+set_global_assignment -name ENABLE_DEVICE_WIDE_OE OFF
+set_global_assignment -name ENABLE_INIT_DONE_OUTPUT OFF
+set_global_assignment -name ENABLE_LOCK_OUTPUT OFF
+set_global_assignment -name ENABLE_JTAG_BST_SUPPORT OFF
+set_global_assignment -name SECURITY_BIT OFF
+set_global_assignment -name ENABLE_VREFA_PIN OFF
+set_global_assignment -name ENABLE_VREFB_PIN OFF
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION ON
+set_global_assignment -name USE_CHECKSUM_AS_USERCODE OFF
+set_global_assignment -name JTAG_USER_CODE FFFFFFFF
+set_global_assignment -name CYCLONEII_CONFIGURATION_SCHEME "ACTIVE SERIAL"
+set_global_assignment -name UPDATE_MODE 
+set_global_assignment -name CONFIGURATION_DEVICE Auto
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name DEVICE_IO_STANDARD LVTTL
+set_global_assignment -name GENERATE_TTF_FILE ON
+set_global_assignment -name GENERATE_RBF_FILE OFF
+set_global_assignment -name GENERATE_JBC_FILE OFF
+set_global_assignment -name GENERATE_SVF_FILE OFF
+set_global_assignment -name GENERATE_ISC_FILE OFF
+set_global_assignment -name GENERATE_JAM_FILE OFF
+set_global_assignment -name GENERATE_HEX_FILE OFF
+set_global_assignment -name HEXOUT_FILE_START_ADDRESS 0
+set_global_assignment -name HEXOUT_FILE_COUNT_DIRECTION "UP"
+set_global_assignment -name ALLOW_LVTTL_LVCMOS_INPUT_LEVELS_TO_OVERDRIVE_INPUT_BUFFER OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS OUTPUT DRIVING GROUND"
+set_global_assignment -name RESERVE_NWS_NRS_NCS_CS_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_RDYNBUSY_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA7_THROUGH_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION 
+set_global_assignment -name EDA_SIMULATION_TOOL "Active-HDL (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name MERGE_HEX_FILE OFF
+set_global_assignment -name EDA_GENERATE_POWER_INPUT_FILE OFF -section_id eda_simulation
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name DISABLE_OCP_HW_EVAL OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT NORMAL
+set_global_assignment -name MUX_RESTRUCTURE AUTO
+set_global_assignment -name ANALYZE_LATCHES_AS_SYNCHRONOUS_ELEMENTS ON
+set_global_assignment -name ENABLE_RECOVERY_REMOVAL_ANALYSIS OFF
+set_global_assignment -name PROJECT_SHOW_ENTITY_NAME ON
+set_global_assignment -name FLOW_DISABLE_ASSEMBLER OFF
+set_global_assignment -name INCREMENTAL_COMPILATION FULL_INCREMENTAL_COMPILATION
+set_global_assignment -name FITTER_EARLY_TIMING_ESTIMATE_MODE REALISTIC
+set_global_assignment -name OPTIMIZE_FAST_CORNER_TIMING OFF
+set_global_assignment -name OVERRIDE_DEFAULT_ELECTROMIGRATION_PARAMETERS OFF
+set_global_assignment -name MAX_CONSECUTIVE_OUTPUTS_FOR_ELECTROMIGRATION 12
+set_global_assignment -name MAX_CONSECUTIVE_VIO_OUTPUTS_FOR_ELECTROMIGRATION 8
+set_global_assignment -name MAX_CURRENT_FOR_ELECTROMIGRATION 240
+set_global_assignment -name MAX_CURRENT_FOR_VIO_ELECTROMIGRATION 240
+set_global_assignment -name ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP OFF
+set_global_assignment -name ADV_NETLIST_OPT_SYNTH_GATE_RETIME OFF
+set_global_assignment -name ADV_NETLIST_OPT_RETIME_CORE_AND_IO ON
+set_global_assignment -name ISP_CLAMP_STATE_DEFAULT TRI-STATE
+set_global_assignment -name CRC_ERROR_CHECKING OFF
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name ENABLE_CLOCK_LATENCY OFF
+set_global_assignment -name FLOW_ENABLE_TIMING_CONSTRAINT_CHECK OFF
+set_global_assignment -name DO_COMBINED_ANALYSIS OFF
+set_global_assignment -name ENABLE_DRC_SETTINGS OFF
+set_global_assignment -name IGNORE_CLOCK_SETTINGS OFF
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS "NORMAL COMPILATION"
+set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL2
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING OFF
+set_global_assignment -name HARDCOPYII_POWER_ON_EXTRA_DELAY OFF
+set_global_assignment -name MAX7000B_VCCIO_IOBANK1 3.3V
+set_global_assignment -name MAX7000B_VCCIO_IOBANK2 3.3V
+set_global_assignment -name AUTO_QIC_EXPORT OFF
+set_global_assignment -name QIC_EXPORT_NETLIST_TYPE POST_FIT
+set_global_assignment -name QIC_EXPORT_FILE 
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS OUTPUT DRIVING AN UNSPECIFIED SIGNAL"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name DEFAULT_HOLD_MULTICYCLE "SAME AS MULTICYCLE"
+set_global_assignment -name USE_TIMEQUEST_TIMING_ANALYZER OFF

@@ -1,0 +1,180 @@
+library IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+use work.Afalina_tvk_pkg.all;
+entity ccd285_sync_generator is
+	port
+	(
+		CLK			: IN STD_LOGIC; -- CLK_PIX * 4 = 114_56
+		CNT_EN		: IN STD_LOGIC; 
+		RESET 		: IN STD_LOGIC; 
+		SHUTTER		: IN STD_LOGIC_VECTOR(11 downto 0);--грубый затвор
+		GAIN		: IN STD_LOGIC_VECTOR(9 downto 0);--усиление
+		GAIN_STROBE	: IN STD_LOGIC;
+		CLAMP		: IN STD_LOGIC_VECTOR(7 downto 0);--привязка к уровню черного		
+		CLAMP_STROBE: IN STD_LOGIC;
+		MODE_CCD	: IN STD_LOGIC;	-- выбор режима полоса 0 либо full 1
+		-- Управление регистрами CCD
+		XV1 		: OUT STD_LOGIC;
+		XV2 		: OUT STD_LOGIC;
+		XV3 		: OUT STD_LOGIC;
+		XV4			: OUT STD_LOGIC;
+		SG2A 		: OUT STD_LOGIC;
+		SG2B 		: OUT STD_LOGIC;
+		XSUB 		: OUT STD_LOGIC;	
+		H1	 		: OUT STD_LOGIC;
+		H2 			: OUT STD_LOGIC;
+		RG	 		: OUT STD_LOGIC;	
+		--AD9845
+		DATACLK 	: OUT STD_LOGIC;	
+		SL 			: OUT STD_LOGIC;
+		SCK 		: OUT STD_LOGIC;
+		SDATA 		: OUT STD_LOGIC;
+		SHD 		: OUT STD_LOGIC;
+		SHP 		: OUT STD_LOGIC;
+		VD	 		: OUT STD_LOGIC;  
+		HD	 		: OUT STD_LOGIC;
+		PBLK 		: OUT STD_LOGIC;	
+		CLPDM 		: OUT STD_LOGIC;
+		CLPOB 		: OUT STD_LOGIC;
+		X			: OUT STD_LOGIC_VECTOR(11 downto 0);--горизонтальный счетчик
+		Y			: OUT STD_LOGIC_VECTOR(11 downto 0);--вертикальный счетчик
+		LINE		: OUT STD_LOGIC;
+		FRAME		: OUT STD_LOGIC;
+		DATE_EN		: OUT STD_LOGIC
+
+		
+	);
+end ccd285_sync_generator;
+
+architecture syn of ccd285_sync_generator is 
+signal cntX			: std_logic_vector(11 downto 0);
+signal cntY			: std_logic_vector(11 downto 0);
+
+--signal NUM_F_LINE	: std_logic_vector(11 downto 0):=X"032";
+
+begin
+	
+cntXY: ccd_counters
+	generic map
+		(
+		MODULEY		=> 80, --/ -- режим работы полоса 80 
+		
+		MODULEY_FULL=> 1068, --/ -- режим работы полнокадровый 1068  
+		MODULEX		=> 1790 --X"6FE",--/ 1790 ;
+		)
+
+	port map
+		(
+		CLK			=> CLK,--global CLK 2/1	 
+		CNT_EN		=> CNT_EN,
+		RESET 		=> RESET,--__|--|__
+		MODE_CCD	=> MODE_CCD, -- 0  полоса 1 полнокадровый режим
+		X			=> cntX,
+		Y			=> cntY
+		);		
+X <= cntX;
+Y <= cntY;
+xvform: xvform_285
+	port map
+		(
+		CLK			=> CLK,
+		CNT_EN		=> CNT_EN,
+		RESET		=> RESET,
+		C_SHUTTER 	=> SHUTTER,
+		F_SHUTTER 	=> (others =>'0'),
+		--NUM_F_LINE	=> NUM_F_LINE,--от 6 до 56 
+		MODE_CCD	=> MODE_CCD, -- 0  полоса 1 полнокадровый режим
+
+		X			=> cntX,
+		Y			=> cntY,
+		-- управление вертикальными регистрами icx285al
+		XV1 		=> XV1,
+		XV2 		=> XV2,
+		XV3 		=> XV3,
+		XV4 		=> XV4,
+		SG2A 		=> SG2A,
+		SG2B 		=> SG2B,
+		XSUB 		=> XSUB,
+		H1			=> H1,
+		H2			=> H2,
+		RG			=> RG
+		);			
+		
+ADC: AD9845  
+	generic	map	 --31 строка --1434 элементов
+		(
+		VD_EDGE				=> 4,
+		HD_EDGE				=> 180,
+		PBLK_RISING_EDGE_Y 	=> 26,
+		PBLK_FALLING_EDGE_Y	=> 57,
+		PBLK_RISING_EDGE_X 	=> 412,
+		PBLK_FALLING_EDGE_X	=> 56,
+		CLP_RISING_EDGE_X	=> 50,
+		CLP_FALLING_EDGE_X	=> 25
+		)
+	 port map (
+		CLK			=> CLK,
+		CNT_EN		=> CNT_EN,
+		RESET 		=> RESET,
+		ADC_GAIN 	=> GAIN,
+		ADC_CLAMP	=> CLAMP,
+		GAIN_STROBE	=> GAIN_STROBE,
+		CLAMP_STROBE=> CLAMP_STROBE,
+		X			=> cntX,
+		Y			=> cntY,
+		MODE_CCD	=> MODE_CCD, -- 0  полоса 1 полнокадровый режим
+		VD			=> VD,
+		HD			=> HD,
+        DATACLK 	=> DATACLK,
+		SHD 		=> SHD,
+		SHP 		=> SHP,
+		PBLK 		=> PBLK,
+		CLPDM 		=> CLPDM,
+		CLPOB 		=> CLPOB,
+		AD_SDATA	=> SDATA,
+		AD_SL		=> SL,
+		AD_SCK		=> SCK
+	    );
+	LINE_285: process(CLK)
+	begin
+		if rising_edge(CLK) then 
+			if RESET = '1' then LINE <= '0';
+			elsif CNT_EN  = '1' then 
+				if cntX >= 56 and cntX< 412 then LINE <= '1';	--285 / 180 -- 415 / 102 см Барк.
+				else LINE <= '0';
+				end if;
+			end if;
+		end if;
+	end process;  
+
+	FRAME_285: process(CLK)
+	begin
+		if rising_edge(CLK) then 
+			if RESET = '1' then FRAME <= '0';
+			elsif CNT_EN  = '1' then 
+				if MODE_CCD = '0' then
+					if  (cntY > 26 and cntY < 57) or 
+				   		(cntY = 26 and cntX >= 412 ) or 
+				   		(cntY = 57 and cntX < 412 )
+				   		then FRAME <= '0';	--285 / 180 -- 415 / 102 см Барк.
+					else FRAME <= '1';
+					end if;
+				elsif MODE_CCD = '1' then
+					if  (cntY > 5 and cntY < 1055) or 
+				   		(cntY = 5 and cntX >= 412 ) or 
+				   		(cntY = 1055 and cntX < 412 )
+				   		then FRAME <= '0';	--1050 строк
+					else FRAME <= '1';
+					end if;
+				end if;
+					
+					
+					
+			end if;
+		end if;
+	end process;  
+
+
+end syn;

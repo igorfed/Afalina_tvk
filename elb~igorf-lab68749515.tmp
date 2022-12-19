@@ -1,0 +1,13 @@
+(_configuration VHDL (testbench_for_afalina_tvk 0 315 (afalina_tvk_tb))
+  (_version v35)
+  (_time 1230541862406 2008.12.29 12:11:02)
+  (_source (\./src/testbench/afalina_tvk_tb.vhd\))
+  (_use (std(standard))(.(afalina_tvk_pkg))(ieee(std_logic_1164)))
+  (_parameters dbg )
+  (_architecture TB_ARCHITECTURE
+    (_instantiation UUT
+      (_entity . afalina_tvk afalina_tvk
+      )
+    )
+  )
+)

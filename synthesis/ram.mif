@@ -1,0 +1,18 @@
+DEPTH = 256;
+WIDTH = 8;
+
+ADDRESS_RADIX = DEC;
+DATA_RADIX = HEX;
+
+CONTENT
+  BEGIN
+0 : 14; 
+1 : 00; 
+2 : 05; 
+3 : 55; 
+4 : 0A; 
+5 : 55; 
+6 : 00;
+[7..255] : 00;  
+end;
+    

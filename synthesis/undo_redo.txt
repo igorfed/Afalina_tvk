@@ -1,0 +1,105 @@
+GED
+
+	Undo Commands
+	     1.	Properties
+	     2.	Move
+	     3.	Properties
+	     4.	Insert Node
+	     5.	Delete
+	     6.	Move
+	     7.	Move
+	     8.	Move
+	     9.	Properties
+	    10.	Copy
+	    11.	Move
+	    12.	Resize
+	    13.	Move
+	    14.	Delete
+	    15.	Update Symbol or Block
+	    16.	Copy
+	    17.	Copy
+	    18.	Delete
+	    19.	Delete
+	    20.	Delete
+	    21.	Move
+	    22.	Paste
+	    23.	Move
+	    24.	Paste
+	    25.	Delete
+	    26.	Copy
+	    27.	Delete
+	    28.	Delete
+	    29.	Copy
+	    30.	Delete
+	    31.	Delete
+	    32.	Copy
+	    33.	Delete
+	    34.	Copy
+	    35.	Copy
+	    36.	Delete
+	    37.	Move
+	    38.	Move
+	    39.	Resize
+	    40.	Delete
+	    41.	Move
+	    42.	Move
+	    43.	Copy
+	    44.	Delete
+	    45.	Delete
+	    46.	Delete
+	    47.	Delete
+	    48.	Copy
+	    49.	Delete
+	    50.	Move
+	    51.	Delete
+	    52.	Move
+	    53.	Copy
+	    54.	Delete
+	    55.	Move
+	    56.	Move
+	    57.	Resize
+	    58.	Delete Insert
+	    59.	Insert Bus
+	    60.	Delete
+	    61.	Delete Insert
+	    62.	Resize
+	    63.	Move
+	    64.	Delete
+	    65.	Move
+	    66.	Resize
+	    67.	Move
+	    68.	Delete
+	    69.	Move
+	    70.	Move
+	    71.	Properties
+	    72.	Insert Node
+	    73.	Insert Node
+	    74.	Insert Symbol
+	    75.	Delete
+	    76.	Properties
+	    77.	Insert Node
+	    78.	Move
+	    79.	Move
+	    80.	Delete
+	    81.	Move
+	    82.	Move
+	    83.	Move
+	    84.	Move
+	    85.	Move
+	    86.	Move
+	    87.	Move
+	    88.	Move
+	    89.	Insert Bus
+	    90.	Move
+	    91.	Resize
+	    92.	Move
+	    93.	Move
+	    94.	Insert Bus
+	    95.	Delete
+	    96.	Delete
+	    97.	Move
+	    98.	Insert Bus
+	    99.	Move
+	   100.	Move
+
+

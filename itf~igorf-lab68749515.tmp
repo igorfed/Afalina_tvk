@@ -1,0 +1,84 @@
+E ccd415_sync_generator VHDL
+L IEEE;
+U ieee.std_logic_1164;
+P CLK _in std_logic
+P CNT_EN _in std_logic
+P RESET _in std_logic
+P SHUTTER _in std_logic_vector[11:0]
+P GAIN _in std_logic_vector[9:0]
+P GAIN_STROBE _in std_logic
+P CLAMP _in std_logic_vector[7:0]
+P CLAMP_STROBE _in std_logic
+P MODE_CCD _in std_logic
+P WIND_CCD _in std_logic
+P XV1 _out std_logic
+P XV2 _out std_logic
+P XV3 _out std_logic
+P SG _out std_logic
+P XSUB _out std_logic
+P H1 _out std_logic
+P H2 _out std_logic
+P RG _out std_logic
+P DATACLK _out std_logic
+P SL _out std_logic = '0'
+P SCK _out std_logic = '0'
+P SDATA _out std_logic = '0'
+P SHD _out std_logic
+P SHP _out std_logic
+P VD _out std_logic
+P HD _out std_logic
+P PBLK _out std_logic
+P CLPDM _out std_logic
+P CLPOB _out std_logic
+P X _out std_logic_vector[11:0]
+P Y _out std_logic_vector[11:0]
+P LINE _out std_logic
+P FRAME _out std_logic
+P DATE_EN _out std_logic
+X ccd415_sync_generator
+1:0]
+P SHDB _out std_logic
+P SHPB _out std_logic
+P VDB _out std_logic
+P HDB _out std_logic
+P PBLKB _out std_logic
+P CLPDMB _out std_logic
+P CLPOBB _out std_logic
+P LVDS_D _out std_logic_vector[27:0] = (others => '0')
+P LVDS_CLK _out std_logic = '0'
+P A _out std_logic_vector[12:0]
+P DQ _inout std_logic_vector[15:0]
+P BA _out std_logic_vector[1:0]
+P WE _out std_logic
+P CAS _out std_logic
+P RAS _out std_logic
+P CS _out std_logic
+P UDQM _out std_logic
+P LDQM _out std_logic
+P CKE _out std_logic
+P CLK_SDRAM _out std_logic
+P MPU_MODE _in std_logic
+P MPU_RESET _in std_logic
+P MPU_A _in std_logic_vector[7:0]
+P MPU_D _inout std_logic_vector[7:0]
+P MPU_RD _in std_logic
+P MPU_WR _in std_logic
+P MPU_INT0 _out std_logic
+P MPU_INT1 _out std_logic
+P ALE _in std_logic
+P PSEN _out std_logic
+P RESET_842 _out std_logic
+P ADUC_TXD _in std_logic
+P ADUC_RXD _out std_logic
+P RS232_TXD _out std_logic
+P RS232_RXD _in std_logic
+P RS485_TXD _out std_logic
+P RS485_RXD _in std_logic
+P RS485_MODE _out std_logic
+P RS485_PV _out std_logic
+P BR _out std_logic
+P PH _out std_logic
+P RES1 _inout std_logic
+P RES2 _inout std_logic
+P KT _inout std_logic_vector[3:1]
+X afalina_tvk

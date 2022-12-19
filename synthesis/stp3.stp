@@ -1,0 +1,306 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C10/5 (0x020F10DD)" sof_file="afalina_tvk.sof" top_level_entity="afalina_tvk">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance compilation_mode="full" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2008/10/13 15:35:51  #0">
+      <clock name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLK" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="4096" trigger_in_enable="yes" trigger_in_node="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|WR" trigger_in_tap_mode="classic" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|WR" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|WR" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[7]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[8]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[9]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[10]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[11]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[12]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[13]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[14]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[7]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[8]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[9]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[10]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[11]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[12]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[13]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[14]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|WR"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[7]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[7]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[8]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[9]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[10]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[11]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[12]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[13]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[14]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|GAIN[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|CLAMP[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[7]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[8]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[9]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[10]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[11]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[12]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[13]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[14]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|SHUTTER[15]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|ADUC_ADDR[7]"/>
+          </bus>
+          <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|WR"/>
+          <bus is_signal_inverted="no" link="all" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[0]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[1]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[2]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[3]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[4]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[5]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[6]"/>
+            <net is_signal_inverted="no" name="AduC842:AduC|Three_ctrl_k:inst6|aduc_reg:inst2|TV[7]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="EE3224C9" global_temp="1" is_expanded="true" name="trigger: 2008/10/13 15:35:51  #1" position="pre" power_up_trigger_mode="false" segment_size="1" trigger_in="rising edge" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <log>
+          <data global_temp="1" name="log: 2008/10/14 16:35:57  #0"/>
+          <extradata/>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="126976"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="column width" size="18" value="34,34,269,74,116,70,88,100,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="window position" size="9" value="1038,499,398,124,0,50,124,0,1"/>
+  </global_info>
+</session>

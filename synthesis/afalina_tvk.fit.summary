@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jan 30 14:32:45 2009
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : afalina_tvk
+Top-level Entity Name : afalina_tvk
+Family : Cyclone III
+Device : EP3C10F256C7
+Timing Models : Preliminary
+Total logic elements : 2,462 / 10,320 ( 24 % )
+    Total combinational functions : 2,119 / 10,320 ( 21 % )
+    Dedicated logic registers : 1,485 / 10,320 ( 14 % )
+Total registers : 1485
+Total pins : 179 / 183 ( 98 % )
+Total virtual pins : 18
+Total memory bits : 86,016 / 423,936 ( 20 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )
